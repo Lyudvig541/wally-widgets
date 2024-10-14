@@ -6,12 +6,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Application</title>
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 <body>
 <div id="app">
          <app-component ></app-component>
 </div>
-@vite('resources/js/app.js')
 </body>
 </html>
